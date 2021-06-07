@@ -23,17 +23,17 @@ class Admin extends Component {
        <div id="admin" style={{marginLeft:"40%"}}>
          <br/>
          <h2 style={{color:"blue"}}>Admin Pannel</h2> 
-         <div class="card shadow text-center border-0 mb-3">  
-         <h5>KYC Whitelisting</h5>
-                <div class="form-inline justify-content-center" >
-               
+         <div class="card shadow text-center border-0 mb-3">
+           <h5>KYC Whitelisting</h5>  
+         <div class="form-inline justify-content-center" >
                    <label class=" mb-2 my-2 my-sm-0"> Address To Allow : </label>
                     <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0"  style={{width:"300px"}} name ="kycAddress" placeholder="Enter Address here" value={this.props.kycAddress} onChange = {this.props.handleInputChange}></input>
                     <button class="btn btn-primary mb-2  my-2 my-sm-0" type="submit" onClick = {this.props.handleKycWhitelisting}>Add to Whitelist</button>
-                </div>
+                <br></br>
+               </div>
                <br></br>
-               </div>      
-                
+               </div>    
+           
                 <div class="form-inline justify-content-center">
                   
                     <input type="checkbox" class="form-control mb-2 mr-sm-2 mb-sm-0" style={{width:"50px"}} id="paused" name ="paused" onClick={this.props.handlePausable}></input>Pause ICO
